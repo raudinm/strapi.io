@@ -1,0 +1,29 @@
+{
+  "name": "strapi.io",
+  "version": "1.0.0",
+  "description": "Socket IO server module for strapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raudinm/strapi.io.git"
+  },
+  "keywords": [
+    "strapi",
+    "socketio",
+    "socket.io",
+    "socket",
+    "sockets"
+  ],
+  "author": "Raudin Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raudinm/strapi.io/issues"
+  },
+  "homepage": "https://github.com/raudinm/strapi.io#readme",
+  "dependencies": {
+    "socket.io": "^3.0.4"
+  }
+}
