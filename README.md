@@ -1,6 +1,6 @@
 ## Strapi.IO
 
-Module for working with socket.io with predefined rules. StrapIO will look at Role permission on each action.
+Module for working with socket.io with predefined rules. Strapi.IO will look at Role permission on each action.
 
 ## Installation
 ```bash
@@ -20,18 +20,19 @@ process.nextTick(() => {
 
 ## Usage
 
-### server
+### Server
 `api/<content-type>/models/<content-type.js`
 ```js
 module.exports = {
   lifecycles: {
-    // Called before an entry is created
-    beforeCreate(data) {
-        strapi.StrapIO.emit(CONTENTYPE, 'update', data);
-    },
     // Called after an entry is created
-    afterCreate(result) {
+    afterCreate(result, data) {
         strapi.StrapIO.emit(CONTENTYPE, 'create', result);
+    },
+
+    // Called after an entry is updated
+    afterUpdate(result, params, data) {
+        strapi.StrapIO.emit(CONTENTYPE, 'update', result);
     },
   },
 }
