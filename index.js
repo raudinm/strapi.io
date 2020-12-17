@@ -49,7 +49,7 @@ class StrapIO {
     if (
       roleDetail.permissions.application.controllers[
         identity.toLowerCase()
-      ][action].enabled
+      ]["find"].enabled
     ) {
       this.io.sockets
         .in(`${roleDetail.name}${this.userId}`) // emit to private channel

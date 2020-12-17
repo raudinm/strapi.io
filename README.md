@@ -1,6 +1,6 @@
 ## Strapi.IO
 
-Module for working with socket.io with predefined rules. Strapi.IO will look at Role permission on each action.
+Module for working with socket.io with predefined rules. Strapi.IO will look at find Role permission on each action.
 
 ## Installation
 ```bash
@@ -59,7 +59,7 @@ socket.on('update', data => {
 Currently tested with:
 ```js
 {
-    "strapi": "3.3.4",
-    "strapi-plugin-users-permissions": "3.3.4"
+    "strapi": "3.4.0",
+    "strapi-plugin-users-permissions": "3.4.0"
 }
 ```
